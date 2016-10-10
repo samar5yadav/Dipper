@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="icon" type="image/ico" href="image.ico" sizes="32x32">
+	<link rel="stylesheet" type="text/css" href="main.css">
+	<style type="text/css">
+		img{
+			max-width: 350px;
+			max-height: 350px;
+		}
+		p{
+			display: inline;
+		}
+		#box1buybutton:hover{
+			font-style: italic;
+		}
+	</style>
+
+	<title>Welcome to Dipper</title>
+</head>
+<body  >
+
+<nav id="nav">
+	<h1>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<font color="#CA300A     ">Dipper<br></font></h1>
+</nav>
+<nav id="navtag">
+	<h3>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<font color="#CA300A     ">connecting trucks with loads<br></font></h3>
+</nav>
+<div id="cartimage">
+	<img src="image3.png" height="100px" width="150px">
+</div>
+
+<div class="container" >
+	<div id="box1">
+		<h1>Sofit Chocolate Milk</h1>
+</div>
+
+<div id="box1image">
+		<img src="image.jpg">
+</div>
+
+<div id="box1detail">
+	<h2>Tetrapack 1.0 Lt</h2>
+	<p>Price &#x20b9; 95&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<del>Price &#x20b9; 99</del></p>
+		<br>
+		<br>
+	<p ><form id="form1">
+			Quantity: <input name="name" type="text" size="5">
+  		</form>
+		<button onclick= "showcalculatedcost()">Submit</button>
+		<script type="text/javascript">
+			function showcalculatedcost(){
+				var x=document.getElementById("form1");
+				var y=x.elements["name"].value;
+				document.getElementById("div1id").innerHTML=95*y;
+				document.getElementById("div1id").setAttribute("style","position:absolute; top: 104px; left: 400px");
+			}
+		</script>
+  		 &emsp;&emsp;&emsp;&emsp;&emsp;&#x20b9;<div id="div1id"></div>
+  		
+  	</p>
+
+</div>
+<div id="box1buyButton">
+	<div id="box1buycart">
+		<img src="image4.png" width="25px" height="25px">
+	</div>
+	<h2>BUY</h2>
+</div>
+
+
+
+
+
+
+<div id="box2">
+		<h1>Sofit Kesar Pista Milk</h1>
+	</div>
+	<div id="box2image">
+		<img src="image2.jpg">
+	</div>
+	<div id="box2detail">
+		<h2>Tetrapack 1.0 Lt</h2>
+		<p>Price &#x20b9; 90 &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<del>Price &#x20b9; 99</del></p>
+		<br>
+		<br>
+		<p>
+		<form id="form2">
+			Quantity: <input name="name2" type="text" size="5">
+  		</form>
+		<button onclick= "showcalculatedcost2()">Submit</button>
+		<script type="text/javascript">
+			function showcalculatedcost2(){
+				var x=document.getElementById("form2");
+				var y=x.elements["name2"].value;
+				document.getElementById("div2id").innerHTML=90*y;
+				document.getElementById("div2id").setAttribute("style","position:absolute; top: 104px; left: 400px");
+			}
+		</script>
+  		 &emsp;&emsp;&emsp;&emsp;&emsp;&#x20b9;<div id="div2id"></div>
+  		</p>
+	</div>
+	<div id="box2buyButton">
+	<div id="box2buycart">
+		<img src="image4.png" width="25px" height="25px">
+		</div>
+		<h2>BUY</h2>
+	</div>
+</div>
+</body>
+</html>
