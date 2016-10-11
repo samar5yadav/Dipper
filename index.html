@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<link rel="icon" type="image/ico" href="image.ico" sizes="32x32">
+	<link rel="icon" type="image/ico" href="image5.ico" sizes="32x32">
 	<link rel="stylesheet" type="text/css" href="main.css">
 	<style type="text/css">
 		img{
@@ -11,9 +11,6 @@
 		p{
 			display: inline;
 		}
-		#box1buybutton:hover{
-			font-style: italic;
-		}
 	</style>
 
 	<title>Welcome to Dipper</title>
@@ -21,13 +18,13 @@
 <body  >
 
 <nav id="nav">
-	<h1>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<font color="#CA300A     ">Dipper<br></font></h1>
+	<h1>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<font color="#CA300A">Dipper<br></font></h1>
 </nav>
 <nav id="navtag">
-	<h3>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<font color="#CA300A     ">connecting trucks with loads<br></font></h3>
+	<h3>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<font color="#CA300A ">connecting trucks with loads<br></font></h3>
 </nav>
 <div id="cartimage">
-	<img src="image3.png" height="100px" width="150px">
+	<img src="image3.png" height="100px" width="200px">
 </div>
 
 <div class="container" >
@@ -44,6 +41,8 @@
 	<p>Price &#x20b9; 95&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<del>Price &#x20b9; 99</del></p>
 		<br>
 		<br>
+		<br>
+		<br>
 	<p ><form id="form1">
 			Quantity: <input name="name" type="text" size="5">
   		</form>
@@ -53,7 +52,7 @@
 				var x=document.getElementById("form1");
 				var y=x.elements["name"].value;
 				document.getElementById("div1id").innerHTML=95*y;
-				document.getElementById("div1id").setAttribute("style","position:absolute; top: 104px; left: 400px");
+				document.getElementById("div1id").setAttribute("style","position:absolute; top: 145px; left: 400px");
 			}
 		</script>
   		 &emsp;&emsp;&emsp;&emsp;&emsp;&#x20b9;<div id="div1id"></div>
@@ -84,6 +83,8 @@
 		<p>Price &#x20b9; 90 &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<del>Price &#x20b9; 99</del></p>
 		<br>
 		<br>
+		<br>
+		<br>
 		<p>
 		<form id="form2">
 			Quantity: <input name="name2" type="text" size="5">
@@ -94,18 +95,84 @@
 				var x=document.getElementById("form2");
 				var y=x.elements["name2"].value;
 				document.getElementById("div2id").innerHTML=90*y;
-				document.getElementById("div2id").setAttribute("style","position:absolute; top: 104px; left: 400px");
+				document.getElementById("div2id").setAttribute("style","position:absolute; top: 145px; left: 400px");
 			}
 		</script>
   		 &emsp;&emsp;&emsp;&emsp;&emsp;&#x20b9;<div id="div2id"></div>
   		</p>
 	</div>
+<div id="posdropdown">
+<div class="dropdown">
+  <button onclick="myFunction()" class="dropbtn">1.00 Lt</button>
+  <div id="myDropdown" class="dropdown-content">
+    <a href="#">1.00 Lt</a>
+    <a href="#">200 Ml</a>
+    <a href="#">100 Ml</a>
+  </div>
+</div>
+<script type="text/javascript">
+	/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown menu if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+</script>
+</div>
+<div id="posdropdown">
+<div class="dropdown">
+  <button onclick="myFunction()" class="dropbtn">1.00 Lt</button>
+  <div id="myDropdown" class="dropdown-content">
+    <a href="#">1.00 Lt</a>
+    <a href="#">200 Ml</a>
+    <a href="#">100 Ml</a>
+  </div>
+</div>
+<script type="text/javascript">
+	/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown menu if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+</script>
+</div>
 	<div id="box2buyButton">
 	<div id="box2buycart">
 		<img src="image4.png" width="25px" height="25px">
 		</div>
-		<h2>BUY</h2>
+		<h2 ><div id="hoverid">BUY</div></h2>
 	</div>
+	<div id="dipperpic">
+	<img src="image6.PNG">
 </div>
 </body>
 </html>
